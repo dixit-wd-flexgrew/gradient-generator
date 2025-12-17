@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, ::before, ::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(92, 145, 229), rgb(152, 63, 198));
+        }
+
+        .box-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+        }
+        .box-cont .input {
+            display: flex;
+            gap: 10px;
+        }
+        .box-cont .input button[type="button"] {
+            border: none;
+            padding: 10px;
+            border-radius: 16px;  
+            font-size: 14px;  
+            cursor: pointer; 
+            width: 100px;       
+        }
+        .box-cont .input .color-left {
+            background-color: rgb(92, 145, 229);
+            color: white;
+        }
+        .box-cont .input .color-right {
+            background-color: rgb(152, 63, 198);
+            color: black;
+        }
+        .box-cont .output {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-left: 2px solid white;
+            border-radius: 4px;
+            background-color: rgba(212, 211, 211, 0.151);
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="box-cont">
+        <div class="input">
+            <button type="button" class="color-left">#5C91E5</button>
+            <button type="button" class="color-right">#983FC6</button>
+        </div>
+        <p class="info">copy your code here</p>
+        <div class="output">background: linear-gradient(to right, rgb(92, 145, 229), rgb(152, 63, 198));</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
