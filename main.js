@@ -66,4 +66,4 @@ leftBtn.addEventListener("click", handleBtn);
 rightBtn.addEventListener("click", handleBtn);
 output.addEventListener("click", (e) => {
     navigator.clipboard.writeText(e.target.innerText);
-})
+});
